@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
@@ -12,7 +12,7 @@ a{
     text-decoration: none;
 }
 
-header {
+header{
     top: 0;
     position: fixed;
     width: 100%;
@@ -28,22 +28,21 @@ header {
 }
 
 #hamburg{
-    padding: 70px 20px 30px 20px;
+    padding: 40px 15px 25px 15px;
     display: block;
     cursor: pointer;
     align-items: center;
 }
 
 #hamburg div{
-    /* border-radius: 25px; */
-    width: 70px;
-    height: 8px;
+    width: 40px;
+    height: 4px;
     background-color: white;
     transition: 0.4s;
 }
 
 .line2, .line3{
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .open .line1 {
@@ -69,15 +68,15 @@ header {
 
 .menu {
     display: none;
+    width: 100%;
     position: absolute;
     top: 50px;
     left: 0;
     height: calc(100vh - 50px);
-    width: 100%;
 }
 
 .menu li {
-  margin: 10px;
+    margin: 10px;
 }
 
 /* 
@@ -171,3 +170,20 @@ h1{
     text-align: center;
     
 }
+
+/* @media (min-width:600px){
+    #hamburg{
+        padding: 40px 15px 20px 15px;
+    }
+    
+    #hamburg div{
+        width: 50px;
+        height: 4px;
+        background-color: white;
+        transition: 0.4s;
+    }
+    
+    .line2, .line3{
+        margin-top: 12px;
+    }
+} */
