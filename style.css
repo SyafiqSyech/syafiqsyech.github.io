@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.hamburg_box{
+    /* height: 90px; */
+    width: auto;
+    position: absolute;
+    right: 10%;
+    background-color: black;
+    transition: 0.3s ease;
+}
+
+#hamburg{
+    padding: 35px 15px 25px 15px;
+    display: block;
+    cursor: pointer;
+    align-items: center;
+}
+
+#hamburg div{
+    border-radius: 25px;
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+.line2, .line3{
+    margin-top: 10px;
+}
+
+.open .line1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .line2 {
+    opacity: 0;
+}
+
+.open .line3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+.menu li {
+  margin: 10px;
+}
+
+/* 
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+nav{
+    margin-left: 2%;
+    height: 100px;
+}
+
+
+.nav_links {
+    height: 100%;
+    position: absolute;
+    display: flex;
+}
+
+.nav_links a{
+    margin: 0 10px;
+}
+
+#logo{
+    height: 100%;
+    width: 90px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+#logo:hover{
+    scale: 1.15;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.3s ease;
+    transform: translate(0, 6px);
+}
+
+.nav_links img{
+    width: 70px;
+} */
+
+.bg{
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(img/WallpaperBILS.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+main{
+    padding-top: 200px;
+    height: 2800px;
+}
+
+.outer_box{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.box{
+    padding: 70px;
+    margin: 15px 0;
+    background-color: darkslategray;
+    width: 70%;
+}
+
+#first{
+    padding: 0;
+    background-color: transparent;
+}
+
+#first p{
+    color: black;
+}
+
+p{
+    color: white;
+}
+
+h1{
+    font-size: 200px;
+    text-align: center;
+    
+}
