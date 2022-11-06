@@ -32,13 +32,13 @@ header{
 .hamburg_box{
     width: auto;
     position: absolute;
-    right: 10%;
+    right: 5%;
     background-color: black;
     transition: 0.3s ease;
 }
 
 #hamburg{
-    padding: 40px 15px 25px 15px;
+    padding: 40px 10px 20px 10px;
     display: block;
     cursor: pointer;
     align-items: center;
@@ -172,9 +172,9 @@ h1{
     
 }
 
-/* @media (min-width:600px){
+@media (min-width:600px){
     #hamburg{
-        padding: 40px 15px 20px 15px;
+        padding: 50px 15px 25px 15px;
     }
     
     #hamburg div{
@@ -187,4 +187,4 @@ h1{
     .line2, .line3{
         margin-top: 12px;
     }
-} */
+}
