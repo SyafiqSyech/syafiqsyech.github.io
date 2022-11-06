@@ -29,30 +29,32 @@ header{
     z-index: 5;
 }
 
-.hamburg_box{
+.hamburg{
+    padding: 30px 10px 15px 10px;
     width: auto;
     position: absolute;
     right: 5%;
     background-color: black;
-    transition: 0.3s ease;
-}
-
-#hamburg{
-    padding: 40px 10px 20px 10px;
-    display: block;
+    transition: 0.3s ease-in;
     cursor: pointer;
+    display: block;
     align-items: center;
 }
 
-#hamburg div{
-    width: 40px;
-    height: 4px;
+.hamburg--hidden{
+    transform: translateY(-69px);
+    transition: 0.3s ease-out;
+}
+
+.hamburg div{
+    width: 30px;
+    height: 3px;
     background-color: white;
     transition: 0.4s;
 }
 
 .line2, .line3{
-    margin-top: 10px;
+    margin-top: 7px;
 }
 
 .open .line1 {
@@ -173,11 +175,15 @@ h1{
 }
 
 @media (min-width:600px){
-    #hamburg{
-        padding: 50px 15px 25px 15px;
+    .hamburg{
+        padding: 40px 15px 25px 15px;
+    }
+
+    .hamburg--hidden{
+        transform: translateY(-104px);
     }
     
-    #hamburg div{
+    .hamburg div{
         width: 50px;
         height: 4px;
         background-color: white;
@@ -185,6 +191,6 @@ h1{
     }
     
     .line2, .line3{
-        margin-top: 12px;
+        margin-top: 13px;
     }
 }

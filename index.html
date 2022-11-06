@@ -10,19 +10,17 @@
     <div class="bg">
     </div>
     <header>
-        <div class="hamburg_box">
-            <div id="hamburg">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-                <ul class="menu">
-                    <li><a href="#">BILS</a></li>
-                    <li><a href="#">Nalubowls</a></li>
-                    <li><a href="#">Fitdeli</a></li>
-                </ul>
-            </div>
+        <div class="hamburg">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <ul class="menu">
+                <li><a href="#">BILS</a></li>
+                <li><a href="#">Nalubowls</a></li>
+                <li><a href="#">Fitdeli</a></li>
+            </ul>
         </div>
-
+        
         <!-- <nav>
             <div class="nav_links">
                 <a href="#">
@@ -42,7 +40,7 @@
                 </a>
             </div>
         </nav> -->
-
+        
     </header>
     <main>
         <div class="outer_box">
@@ -65,5 +63,21 @@
             </div>
         </div>
     </main>
+    <script>
+        {
+            const hamburg = document.querySelector(".hamburg");
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener("scroll", () => {
+                if (lastScrollY < window.scrollY) {
+                    hamburg.classList.add("hamburg--hidden");
+                } else {
+                    hamburg.classList.remove("hamburg--hidden");
+                }
+
+                lastScrollY = window.scrollY;
+            });
+        }
+    </script>
 </body>
 </html>
