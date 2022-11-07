@@ -91,55 +91,15 @@ header{
     margin: 10px;
 }
 
-/* 
-header {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-}
-
-nav{
-    margin-left: 2%;
-    height: 100px;
-}
-
-
-.nav_links {
-    height: 100%;
-    position: absolute;
-    display: flex;
-}
-
-.nav_links a{
-    margin: 0 10px;
-}
-
-#logo{
-    height: 100%;
-    width: 90px;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s ease;
-}
-
-#logo:hover{
-    scale: 1.15;
-    box-shadow: 0px 0px 10px black;
-    transition: 0.3s ease;
-    transform: translate(0, 6px);
-}
-
-.nav_links img{
-    width: 70px;
-} */
 
 
 main{
-    padding-top: 200px;
+    padding-top: 15vh;
     height: 2800px;
+}
+
+#logo{
+    width: 300px;
 }
 
 .outer_box{
@@ -149,10 +109,9 @@ main{
 }
 
 .box{
-    padding: 70px;
-    margin: 15px 0;
-    background-color: darkslategray;
-    width: 70%;
+    padding: 8vmin;
+    margin: 20px 8vw;
+    background-color: black;
 }
 
 #first{
@@ -161,18 +120,36 @@ main{
 }
 
 #first p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    word-spacing: 18px;
     color: black;
+}
+
+#button_box{
+    display: flex;
+    /* background-color: blue; */
+}
+
+.link{
+    margin: auto;
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    width: 41px;
+    height: 41px;
+    border-radius: 100px;
 }
 
 p{
     color: white;
 }
 
-h1{
-    font-size: 25vw;
-    text-align: center;
-    
-}
+
 
 @media (min-width:600px){
     .hamburg{
