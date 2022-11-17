@@ -92,20 +92,22 @@ main{
 .outer_box{
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
 }
 
 .box{
     padding: 8vmin;
     margin: 20px 8vw;
     width: 100%;
-    background-color: #F3F2E8;
+    background-color: white;
+    box-shadow: 0 0px 15px -5px;
 }
 
 #first{
     width: auto;
     padding: 0;
     background-color: transparent;
+    box-shadow: none;
 }
 
 #first p{
@@ -154,14 +156,31 @@ hr{
     display: flex;
 }
 
-.text_left{
-    width: 70%;
+#text_left{
+    width: 80%;
+    float: left;
 }
 
-.text_rght{
-    width: 30%;
-    float: left;
+#text_rght{
+    width: 20%;
     text-align: right;
+}
+
+#desc{
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-style: italic;
+    color: #858280;
+}
+
+#desc_bottom{
+    font-weight: 600;
+    font-style: italic;
+    color: #858280;
+}
+
+#title{
+    display: block;
 }
 
 h1{
@@ -169,15 +188,12 @@ h1{
 }
 
 h2{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 p{
     font-size: 16px;
-    margin: 3px 0;
 }
-
-
 
 @media (min-width:600px){
     .hamburg{
@@ -197,5 +213,9 @@ p{
     
     .line2, .line3{
         margin-top: 13px;
+    }
+
+    #title{
+        display: flex;
     }
 }
