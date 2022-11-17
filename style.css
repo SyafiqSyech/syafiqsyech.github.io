@@ -19,7 +19,7 @@ a{
     background-image: url(img/WallpaperBILS.jpg);
     background-position: center;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 header{
@@ -82,6 +82,7 @@ header{
 main{
     padding-top: 15vh;
     height: 2800px;
+    background-color: #F3F2E8;
 }
 
 #logo{
@@ -98,7 +99,7 @@ main{
     padding: 8vmin;
     margin: 20px 8vw;
     width: 100%;
-    background-color: black;
+    background-color: #F3F2E8;
 }
 
 #first{
@@ -134,9 +135,33 @@ main{
 }
 
 .box h1, h2, p{
-    letter-spacing: 6px;
+    letter-spacing: 3px;
     font-weight: 700;
-    color: white;
+    color: black;
+}
+
+hr{
+    height: 2px;
+    background-color: black;
+    border: 0px;
+}
+
+.text_outer_cont{
+    margin: 15px 0;
+}
+
+.text_cont{
+    display: flex;
+}
+
+.text_left{
+    width: 70%;
+}
+
+.text_rght{
+    width: 30%;
+    float: left;
+    text-align: right;
 }
 
 h1{
@@ -147,15 +172,9 @@ h2{
     font-size: 18px;
 }
 
-hr{
-    height: 2px;
-    margin: 10px 0;
-    background-color: white;
-}
-
 p{
-
     font-size: 16px;
+    margin: 3px 0;
 }
 
 
