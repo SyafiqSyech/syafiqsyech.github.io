@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: "Kulim Park", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     z-index: 3;
     box-sizing: border-box;
 }
@@ -167,14 +167,18 @@ hr{
 }
 
 #desc{
+    letter-spacing: 0;
     margin-bottom: 7px;
-    font-weight: 600;
+    font-weight: 400;
+    font-family: "Libre Baskerville", sans-serif;;
     font-style: italic;
     color: #858280;
 }
 
 #desc_bottom{
-    font-weight: 600;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-family: "Libre Baskerville", sans-serif;;
     font-style: italic;
     color: #858280;
 }
