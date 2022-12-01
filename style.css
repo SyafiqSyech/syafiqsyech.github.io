@@ -19,6 +19,7 @@ a{
     background-image: url(img/WallpaperBILS.jpg);
     background-position: center;
     background-size: cover;
+    background-size: 150%;
     opacity: 0.6;
 }
 
@@ -170,7 +171,7 @@ hr{
     letter-spacing: 0;
     margin-bottom: 7px;
     font-weight: 400;
-    font-family: "Libre Baskerville", sans-serif;;
+    font-family: "Libre Baskerville", sans-serif;
     font-style: italic;
     color: #858280;
 }
@@ -178,7 +179,7 @@ hr{
 #desc_bottom{
     letter-spacing: 0;
     font-weight: 400;
-    font-family: "Libre Baskerville", sans-serif;;
+    font-family: "Libre Baskerville", sans-serif;
     font-style: italic;
     color: #858280;
 }
@@ -197,6 +198,51 @@ h2{
 
 p{
     font-size: 16px;
+}
+
+.testbox{
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimg{
+    background-image: url("img/chocolate.webp");
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    padding-top: 100%;
+    object-fit: cover;
+    transition: 0.2s ease 0.3s;
+}
+
+.testtext{
+    position: absolute;
+    text-align: start;
+    width: 75%;
+    left: 0;
+    right: 0;
+    bottom: 105%;
+    margin: auto;
+    transition: 0.3s ease-in 0s;
+}
+
+.testtext span{
+    background-color: white;
+    color: black;
+}
+
+.testimgtoggle{
+    opacity: 0.5;
+    transition: 0.2s ease 0s !important;
+}
+
+.testtexttoggle{
+    transform: translate(0, 115%) !important;
+    opacity: 1 !important;
+    transition: 0.3s ease-out 0.3s !important;
 }
 
 @media (min-width:600px){

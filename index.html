@@ -21,6 +21,7 @@
             </ul>
         </div>
     </header>
+    
     <main>
         <div class="outer_box">
             <div class="box" id="first">
@@ -191,21 +192,69 @@
                 <hr id="bot">
             </div>
         </div>
+        <div class="outer_box">
+            <div class="box">
+                <hr id="top">
+                <div class="text_outer_cont">
+                    <div id="title" class="text_cont">
+                        <h1 id="text_left">COFFEE</h1>
+                        <h2 id="text_rght">HOT/COLD</h2>
+                    </div>
+                </div>
+                <hr id="mid">
+                <div class="testbox" onclick="testImgClick(1, 1)">
+                    <div class="testimg" id="im1"></div>
+                    <div class="testtext" id="tx1">
+                            <span id="desc">description bla bla bla lorem ipsum lorem ipsum ini description description bla bla bla lorem ipsum lorem ipsum ini description description bla bla bla lorem ipsum lorem ipsum ini description description bla bla bla lorem ipsum lorem ipsum ini description</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outer_box">
+            <div class="box">
+                <hr id="top">
+                <div class="text_outer_cont">
+                    <div id="title" class="text_cont">
+                        <h1 id="text_left">COFFEE</h1>
+                        <h2 id="text_rght">HOT/COLD</h2>
+                    </div>
+                </div>
+                <hr id="mid">
+                <div class="testbox" onclick="testImgClick(2, 2)">
+                    <div class="testimg" id="im2"></div>
+                    <div class="testtext" id="tx2">
+                            <span id="desc">description bla bla bla lorem ipsum lorem ipsum ini description description bla bla bla lorem ipsum lorem ipsum ini description description bla bla bla lorem ipsum lorem ipsum ini description description bla bla bla lorem ipsum lorem ipsum ini description</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outer_box">
+            <div class="box">
+                <hr id="top">
+                <div class="text_outer_cont">
+                    <div id="title" class="text_cont">
+                        <h1 id="text_left">COFFEE</h1>
+                        <h2 id="text_rght">HOT/COLD</h2>
+                    </div>
+                </div>
+                <hr id="mid">
+                <div class="testbox" onclick="testImgClick(3, 3)">
+                    <div class="testimg" id="im3"></div>
+                    <div class="testtext" id="tx3">
+                            <span id="desc">description bla bla bla lorem ipsum lorem ipsum ini description description bla bla bla lorem ipsum lorem ipsum ini description description bla bla bla lorem ipsum lorem ipsum ini description description bla bla bla lorem ipsum lorem ipsum ini description</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </main>
+    <script src="main.js"></script>
     <script>
         {
-            const hamburg = document.querySelector(".hamburg");
-            let lastScrollY = window.scrollY;
-
-            window.addEventListener("scroll", () => {
-                if (lastScrollY < window.scrollY) {
-                    hamburg.classList.add("hamburg--hidden");
-                } else {
-                    hamburg.classList.remove("hamburg--hidden");
-                }
-
-                lastScrollY = window.scrollY;
-            });
+            function testImgClick(a, b){
+                document.getElementById("im"+a).classList.toggle("testimgtoggle")
+                document.getElementById("tx"+b).classList.toggle("testtexttoggle")
+            }
         }
     </script>
 </body>

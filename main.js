@@ -10,14 +10,3 @@ window.addEventListener("scroll", () => {
 
     lastScrollY = window.scrollY;
 });
-
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-// var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("hamburg").style.backgroundColor = "black";
-//   } else {
-//     document.getElementById("hamburg").style.backgroundColor = "white";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
