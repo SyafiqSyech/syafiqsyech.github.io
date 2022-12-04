@@ -1,0 +1,114 @@
+.testbox{
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimg{
+    background-image: url("img/chocolate.webp");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 100%;
+    object-fit: cover;
+    transition: 0.2s ease 0.4s;
+}
+
+.testtext{
+    position: absolute;
+    text-align: start;
+    width: 75%;
+    bottom: 101%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.3s ease-in 0s;
+}
+
+.testtext span{
+    background-color: white;
+    color: black;
+}
+
+.testimgtoggle{
+    opacity: 0.5;
+    transition: 0.2s ease 0s !important;
+}
+
+.testtexttoggle{
+    bottom: 50% !important;
+    transform: translate(-50%, 50%) !important;
+    opacity: 1 !important;
+    transition: 0.3s ease-out 0.3s !important;
+}
+
+@media (min-width:600px){
+    .testbox{
+        width: 250px;
+    }
+}
+
+
+
+.testtitle{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.testbox1{
+    padding: 7px;
+    border: 3px solid black;
+    margin-top: 10px;
+    display: flex;
+}
+
+.testtext_left{
+    width: 80%;
+    float: left;
+}
+
+.testtext_rght{
+    width: 20%;
+    text-align: right;
+}
+
+.testdesc{
+    letter-spacing: 0;
+    font-weight: 400;
+    font-family: "Libre Baskerville", sans-serif;
+    font-style: italic;
+    color: #858280;
+}
+
+.testpop{
+    z-index: 9;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    display: none;
+}
+
+.testpopback{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.338);
+}
+
+.testpopbox{
+    position: absolute;
+    margin: auto auto;
+    width: 300px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.testpoptoggle{
+    display: block;
+}
+
+.stop_scroll{
+    overflow: hidden;
+}
