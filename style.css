@@ -12,17 +12,6 @@ a{
     text-decoration: none;
 }
 
-.bg{
-    position: fixed;
-    min-width: 100vw;
-    min-height: 100vh;
-    background-image: url(img/WallpaperBILS.jpg);
-    background-position: center;
-    background-size: cover;
-    background-size: 150%;
-    opacity: 0.6;
-}
-
 header{
     top: 0;
     position: fixed;
@@ -80,9 +69,10 @@ header{
 
 
 
+
 main{
     padding-top: 15vh;
-    background-color: #F3F2E8;
+    background-color: white;
 }
 
 #logo{
@@ -96,16 +86,16 @@ main{
 }
 
 .box{
-    padding: 8vmin;
     margin: 20px 8vw;
     width: 100%;
     background-color: white;
-    box-shadow: 0 0px 15px -5px;
+    max-width: 700px;
 }
 
 #first{
-    width: auto;
-    padding: 0;
+    width: 100%;
+    margin: 20px auto;
+    padding: auto;
     background-color: transparent;
     box-shadow: none;
 }
@@ -142,14 +132,22 @@ main{
     color: black;
 }
 
-hr{
-    height: 2px;
-    background-color: black;
-    border: 0px;
+.text_outer_cont{
+    padding: 15px 0;
+    border-bottom: 2px solid black;
 }
 
-.text_outer_cont{
-    margin: 15px 0;
+.title{
+    border-top: 2px solid black;
+}
+
+.title h1{
+    width: 70%;
+}
+
+.title h2{
+    width: 30%;
+    margin: auto 0;
 }
 
 .text_cont{
@@ -179,18 +177,14 @@ hr{
     margin-bottom: 0 !important;
 }
 
-.title{
-    display: block;
-}
-
 h1{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 h2{
-    font-size: 16px;
+    font-size: 10px;
 }
 
 p{
-    font-size: 16px;
+    font-size: 14px;
 }

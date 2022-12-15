@@ -17,8 +17,11 @@
     .line2, .line3{
         margin-top: 13px;
     }
-    
-    #title{
-        display: flex;
+
+}
+
+@media (min-width:700px){
+    .outer_box{
+        margin: auto;
     }
 }
