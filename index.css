@@ -1,0 +1,82 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 100px auto 20px auto;
+    padding: auto;
+    box-shadow: none;
+}
+
+header p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    word-spacing: 18px;
+    letter-spacing: 0;
+}
+
+#logo{
+    width: 300px;
+}
+
+.button_box{
+    display: flex;
+}
+
+.link{
+    margin: auto;
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    width: 41px;
+    height: 41px;
+    border-radius: 100px;
+}
+
+
+
+.menu{
+    margin: 30px 0;
+    border: 2px solid black;
+}
+
+.menu h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 2px solid black;
+}
+
+.menu_box{
+    padding: 5px 10% 10px 10%;
+}
+
+.menu_opt{
+    display: flex;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+    padding-bottom: 8px;
+}
+
+.menu_opt span{
+    margin-bottom: 2px;
+}
+
+.menu_opt h2{
+    margin-top: auto;
+    letter-spacing: 3px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.menu_opt p{
+    margin: auto 0 5px 5px;
+    font-weight: 400;
+    font-size: 12px;
+    word-spacing: 4px;
+}

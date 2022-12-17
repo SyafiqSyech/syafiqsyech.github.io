@@ -21,7 +21,7 @@
 }
 
 @media (min-width:700px){
-    .outer_box{
+    main{
         margin: auto;
     }
 }
