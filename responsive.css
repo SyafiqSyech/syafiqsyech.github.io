@@ -17,8 +17,17 @@
     .line2, .line3{
         margin-top: 13px;
     }
-    
-    #title{
-        display: flex;
+
+}
+
+@media (min-width:700px){
+    main{
+        margin: auto;
+    }
+}
+
+@media (max-width:350px){
+    .products{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 }

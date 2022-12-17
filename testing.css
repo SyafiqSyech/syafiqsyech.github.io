@@ -1,45 +1,4 @@
-.testbox{
-    margin-top: 50px;
-    position: relative;
-    overflow: hidden;
-}
 
-.testimg{
-    background-image: url("img/chocolate.webp");
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    padding-top: 100%;
-    object-fit: cover;
-    transition: 0.2s ease 0.4s;
-}
-
-.testtext{
-    position: absolute;
-    text-align: start;
-    width: 75%;
-    bottom: 101%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    transition: 0.3s ease-in 0s;
-}
-
-.testtext span{
-    background-color: white;
-    color: black;
-}
-
-.testimgtoggle{
-    opacity: 0.5;
-    transition: 0.2s ease 0s !important;
-}
-
-.testtexttoggle{
-    bottom: 50% !important;
-    transform: translate(-50%, 50%) !important;
-    opacity: 1 !important;
-    transition: 0.3s ease-out 0.3s !important;
-}
 
 @media (min-width:600px){
     .testbox{

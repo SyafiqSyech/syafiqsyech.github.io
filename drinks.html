@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BILS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <p class="page_title">D R I N K S</p>
+    </header>
+    <main>
+        <div class="main_box">
+            <div class="outer_box">
+                <div class="title_box">
+                    <p class="title">COFFEE</p>
+                    <p class="hotcold">HOT/COLD</p>
+                </div>
+                <div class="products">
+                    <div>
+                        <div class="img_box" onclick="ImgClick(1)">
+                            <p class="tapme">TAP ME</p>
+                            <div class="desc_box" id="tx1">
+                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
+                            </div>
+                            <img src="img/acai.webp" alt="product_img" class="product_img" id="im1">
+                        </div>
+                        <p class="product_txt">ACAI<br>30</p>
+                    </div>
+                    <div>
+                        <div class="img_box" onclick="ImgClick(2)">
+                            <p class="tapme">TAP ME</p>
+                            <div class="desc_box" id="tx2">
+                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
+                            </div>
+                            <img src="img/chocolate.webp" alt="product_img" class="product_img" id="im2">
+                        </div>
+                        <p class="product_txt">CHOCOLATE<br>45</p>
+                    </div>
+                    <div>
+                        <div class="img_box" onclick="ImgClick(3)">
+                            <p class="tapme">TAP ME</p>
+                            <div class="desc_box" id="tx3">
+                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
+                            </div>
+                            <img src="img/latte.webp" alt="product_img" class="product_img" id="im3">
+                        </div>
+                        <p class="product_txt">LATTE<br>25</p>
+                    </div>
+                    <div>
+                        <div class="img_box" onclick="ImgClick(4)">
+                            <p class="tapme">TAP ME</p>
+                            <div class="desc_box" id="tx4">
+                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
+                            </div>
+                            <img src="img/WallpaperBILS.jpg" alt="product_img" class="product_img" id="im4">
+                        </div>
+                        <p class="product_txt">AIR PUTIH<br>130</p>
+                    </div>
+                    <div>
+                        <div class="img_box" onclick="ImgClick(5)">
+                            <p class="tapme">TAP ME</p>
+                            <div class="desc_box" id="tx5">
+                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
+                            </div>
+                            <img src="img/acai.webp" alt="product_img" class="product_img" id="im5">
+                        </div>
+                        <p class="product_txt">ACAI<br>30</p>
+                    </div>
+                    <div>
+                        <div class="img_box" onclick="ImgClick(6)">
+                            <p class="tapme">TAP ME</p>
+                            <div class="desc_box" id="tx6">
+                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
+                            </div>
+                            <img src="img/chocolate.webp" alt="product_img" class="product_img" id="im6">
+                        </div>
+                        <p class="product_txt">CHOCOLATE<br>45</p>
+                    </div>
+                    <div>
+                        <div class="img_box" onclick="ImgClick(7)">
+                            <p class="tapme">TAP ME</p>
+                            <div class="desc_box" id="tx7">
+                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
+                            </div>
+                            <img src="img/latte.webp" alt="product_img" class="product_img" id="im7">
+                        </div>
+                        <p class="product_txt">LATTE<br>25</p>
+                    </div>
+                    <div>
+                        <div class="img_box" onclick="ImgClick(8)">
+                            <p class="tapme">TAP ME</p>
+                            <div class="desc_box" id="tx8">
+                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
+                            </div>
+                            <img src="img/WallpaperBILS.jpg" alt="product_img" class="product_img" id="im8">
+                        </div>
+                        <p class="product_txt">AIR PUTIH<br>130</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+    <script>
+        {
+            function ImgClick(n){
+                document.getElementById("im"+n).classList.toggle("imgtoggle")
+                document.getElementById("tx"+n).classList.toggle("desctoggle")
+            }
+        }
+    </script>
+    <script>
+        {
+            function testImgClick1(n){
+                document.getElementById("pop"+n).classList.toggle("testpoptoggle")
+                document.body.classList.toggle("stop_scroll");
+            }
+        }
+    </script>
+</body>
+</html>
