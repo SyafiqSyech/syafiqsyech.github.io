@@ -1,16 +1,53 @@
-main{
-    padding-top: 15vh;
-    background-color: white;
+.header_box{
+    padding: 150px 0;
+}
+
+.back{
+    padding: 3px 8px 3px 0;
+    z-index: 7;
+    top: 10px;
+    position: fixed;
+    display: flex;
+    background-color: black;
+}
+
+.back p{
+    letter-spacing: 2px;
+    padding-top: 7.5px;
+    font-weight: 400;
+    color: white;
+}
+
+.back span{
+    color: white;
+    transform: scaleX(-1);
 }
 
 #logo{
-    width: 300px;
+    display: block;
+    margin: 10px auto;
+    width: 40px;
+    height: 20px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+.page_title{
+    width: 80%;
+    margin: auto;
+    font-size: min(15vmin, 64px);
+    font-weight: 300;
+}
+
+
+
+main{
+    background-color: white;
 }
 
 .outer_box{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    height: auto;
+    padding-bottom: 80px;
 }
 
 .outer_box p{
@@ -22,7 +59,7 @@ main{
     align-items: center;
     text-align: center;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .title{
@@ -36,8 +73,11 @@ main{
 .products{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    column-gap: 4%;
-    row-gap: 4%;
+    column-gap: 6%;
+}
+
+.product_box{
+    padding-bottom: 25px;
 }
 
 .img_box{
@@ -62,6 +102,7 @@ main{
 }
 
 .desc_box{
+    z-index: 3;
     position: absolute;
     text-align: start;
     width: 75%;
@@ -93,6 +134,7 @@ main{
 }
 
 .product_txt{
+    font-weight: 500;
     margin-top: 10px;
 }
 
@@ -111,4 +153,10 @@ main{
 p{
     font-size: 12px;
     text-align: center;
+}
+
+@media (max-width: 355px){
+    .products{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
 }

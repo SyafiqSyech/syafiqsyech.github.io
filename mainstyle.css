@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: "Josefin Sans", sans-serif;
-    z-index: 3;
     box-sizing: border-box;
     color: black;
 }
@@ -14,18 +13,24 @@ a{
 }
 
 body{
-    background-color: white;
+    background-color: rgb(197, 239, 207);
 }
 
-main{
+
+header, main{
+    background-color: white;
     display: flex;
     justify-content: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.header_box{
+    margin: auto;
+    width: 100%;
 }
 
 .main_box{
-    margin-left: 4vw;
-    margin-right: 4vw;
+    margin: 0 4%;
     width: 100%;
-    max-width: 700px;
 }
-
