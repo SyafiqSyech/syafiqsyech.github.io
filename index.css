@@ -97,7 +97,7 @@ header{
     left: 50%;
     transform: translateX(-50%);
     background-color: transparent;
-    z-index: 0;
+    z-index: -1;
     transition: 0.3s ease 0.5s;
 }
 
@@ -108,7 +108,7 @@ header{
 }
 
 .menu_pop{
-    overflow: scroll;
+    overflow: auto;
     height: 100%;
     width: 75%;
     float: right;
