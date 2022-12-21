@@ -15,17 +15,17 @@
                 <span class="material-symbols-outlined">close</span>
             </div>
             <div class="menu_box">
-                <a href="#top" onclick="MenuClick()"><p class="menu_opt">D R I N K S</p></a>
-                <a href="#1" onclick="MenuClick()"><p class="menu_sub_opt">COFFEE</p></a>
-                <a href="#2" onclick="MenuClick()"><p class="menu_sub_opt">NON COFFEE</p></a>
-                <a href="#3" onclick="MenuClick()"><p class="menu_sub_opt">JUICE</p></a>
-                <a href="#4" onclick="MenuClick()"><p class="menu_sub_opt">TITLE</p></a>
+                <a href="drinks.html"><p class="menu_opt">D R I N K S</p></a>
+                <a href="drinks.html#1"><p class="menu_sub_opt">COFFEE</p></a>
+                <a href="drinks.html#2"><p class="menu_sub_opt">NON COFFEE</p></a>
+                <a href="drinks.html#3"><p class="menu_sub_opt">JUICE</p></a>
+                <a href="drinks.html#4"><p class="menu_sub_opt">TITLE</p></a>
                 <a href="food.html"><p class="menu_opt">F O O D</p></a>
                 <a href="food.html#1"><p class="menu_sub_opt">PASTRIES</p></a>
                 <a href="food.html#2"><p class="menu_sub_opt">ASIAN</p></a>
                 <a href="food.html#3"><p class="menu_sub_opt">WESTERN</p></a>
                 <a href="food.html#4"><p class="menu_sub_opt">TITLE</p></a>
-                <a href="bigbottle.html"><p class="menu_opt">B I G B O T T L E</p></a>
+                <a href="#top" onclick="MenuClick()"><p class="menu_opt">B I G B O T T L E</p></a>
             </div>
         </div>
     </div>
@@ -42,16 +42,12 @@
                 </div>
             </div>
             <img id="logo" src="img\Bil's-Coffee-Logo2.png" alt="logo">
-            <p class="page_title">D R I N K S</p>
+            <p class="page_title">B I G B O T T L E</p>
         </div>
     </header>
     <main>
         <div class="main_box">
             <div class="outer_box">
-                <div id="1" class="title_box">
-                    <p class="title">COFFEE</p>
-                    <p class="hotcold">HOT/COLD</p>
-                </div>
                 <div class="products">
                     <div class="product_box">
                         <div class="img_box" onclick="ImgClick(1)">
@@ -135,76 +131,17 @@
                     </div>
                 </div>
             </div>
-            <div class="outer_box">
-                <div id="2" class="title_box">
-                    <p class="title">TITLE</p>
-                    <!-- <p class="hotcold">HOT/COLD</p> -->
-                </div>
-                <div class="products">
-                    <div class="product_box">
-                        <div class="img_box" onclick="ImgClick(9)">
-                            <p class="tapme">TAP ME</p>
-                            <div class="desc_box" id="tx9">
-                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
-                            </div>
-                            <img src="img/WallpaperBILS.jpg" alt="product_img" class="product_img" id="im9">
-                        </div>
-                        <p class="product_txt">PRODUCT<br>11</p>
-                    </div>
-                    <div class="product_box">
-                        <div class="img_box" onclick="ImgClick(10)">
-                            <p class="tapme">TAP ME</p>
-                            <div class="desc_box" id="tx10">
-                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
-                            </div>
-                            <img src="img/WallpaperBILS.jpg" alt="product_img" class="product_img" id="im10">
-                        </div>
-                        <p class="product_txt">PRODUCT<br>11</p>
-                    </div>
-                    <div class="product_box">
-                        <div class="img_box" onclick="ImgClick(11)">
-                            <p class="tapme">TAP ME</p>
-                            <div class="desc_box" id="tx11">
-                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
-                            </div>
-                            <img src="img/WallpaperBILS.jpg" alt="product_img" class="product_img" id="im11">
-                        </div>
-                        <p class="product_txt">PRODUCT<br>11</p>
-                    </div>
-                    <div class="product_box">
-                        <div class="img_box" onclick="ImgClick(12)">
-                            <p class="tapme">TAP ME</p>
-                            <div class="desc_box" id="tx12">
-                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
-                            </div>
-                            <img src="img/WallpaperBILS.jpg" alt="product_img" class="product_img" id="im12">
-                        </div>
-                        <p class="product_txt">PRODUCT<br>11</p>
-                    </div>
-                    <div class="product_box">
-                        <div class="img_box" onclick="ImgClick(13)">
-                            <p class="tapme">TAP ME</p>
-                            <div class="desc_box" id="tx13">
-                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
-                            </div>
-                            <img src="img/WallpaperBILS.jpg" alt="product_img" class="product_img" id="im13">
-                        </div>
-                        <p class="product_txt">PRODUCT<br>11</p>
-                    </div>
-                    <div class="product_box">
-                        <div class="img_box" onclick="ImgClick(14)">
-                            <p class="tapme">TAP ME</p>
-                            <div class="desc_box" id="tx14">
-                                <span>description bla bla bla lorem ipsum lorem ipsum ini description bla bla bla</span>
-                            </div>
-                            <img src="img/WallpaperBILS.jpg" alt="product_img" class="product_img" id="im14">
-                        </div>
-                        <p class="product_txt">PRODUCT<br>11</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
     <script src="main.js"></script>
+    <style>
+        .img_box{
+            aspect-ratio: 3 / 4;
+        }
+
+        .product_img{
+            height: 100%;
+        }
+    </style>
 </body>
 </html>

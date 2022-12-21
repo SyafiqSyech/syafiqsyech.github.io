@@ -67,6 +67,7 @@
 }
 
 
+
 .menu_pop_box{
     position: fixed;
     top: 0;
@@ -77,18 +78,22 @@
     overflow: hidden;
     left: 50%;
     transform: translateX(-50%);
+    background-color: transparent;
     z-index: 0;
-    transition: 0s ease-in 1s;
+    transition: 0.3s ease 0.5s;
 }
 
 .menu_pop_box_open{
     z-index: 10;
-    transition: 0s ease-in 0s;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease 0s;
 }
 
 .menu_pop{
     overflow: scroll;
     height: 100%;
+    width: 75%;
+    float: right;
     background-color: black;
     transform: translateX(100%);
     transition: 0.5s ease-in-out;
@@ -104,9 +109,11 @@
 }
 
 .menu_close{
+    float: right;
     cursor: pointer;
-    top: 10px;
-    right: 10px;
+    margin-top: 10px;
+    width: 80px;
+    text-align: center;
 }
 
 .menu_box{
@@ -119,13 +126,13 @@
 }
 
 .menu_opt{
-    font-size: min(10vmin, 48px);
+    font-size: min(5vmin, 32px);
     font-weight: 300;
     margin-top: 2vh;
 }
 
 .menu_sub_opt{
-    font-size: min(4vmin, 18px);
+    font-size: min(2vmin, 14px);
     font-weight: 500;
     letter-spacing: 3px;
     margin-top: 1vh;
@@ -152,6 +159,7 @@ main{
     text-align: center;
     font-weight: 600;
     margin-bottom: 30px;
+    padding-top: 30px;
 }
 
 .title{
