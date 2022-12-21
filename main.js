@@ -6,4 +6,5 @@ function ImgClick(n){
 
 function MenuClick(){
     document.getElementById("menupopup").classList.toggle("menu_pop_open")
+    document.body.classList.toggle("stop_scroll");
 }

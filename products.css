@@ -62,8 +62,8 @@
 
 
 
-.display_none{
-    display: none;
+.stop_scroll{
+    position: fixed;
 }
 
 .menu_pop{
