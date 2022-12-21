@@ -9,7 +9,7 @@ header{
     margin: 100px auto 20px auto;
 }
 
-header p{
+.header_box p{
     margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 300;
@@ -19,11 +19,51 @@ header p{
     letter-spacing: 0;
 }
 
+
+
+
+.button_box{
+    width: 100%;
+    max-width: 700px;
+    position: fixed;
+    top: 10px;
+    z-index: 7;
+    justify-content: space-between;
+}
+
+.button{
+    float: right;
+    display: flex;
+    background-color: black;
+}
+
+.button p{
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding-top: 7.5px;
+    font-weight: 400;
+    color: white;
+}
+
+.button span{
+    color: white;
+}
+
+.menu p{
+    margin-left: 10px;
+}
+
+.menu{
+    cursor: pointer;
+}
+
+
+
 #logo{
     width: 300px;
 }
 
-.button_box{
+.link_box{
     display: flex;
 }
 
@@ -40,7 +80,85 @@ header p{
 
 
 
-.menu{
+.stop_scroll{
+    overflow: hidden;
+}
+
+
+
+.menu_pop_box{
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    height: 100vh;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    z-index: 0;
+    transition: 0.3s ease 0.5s;
+}
+
+.menu_pop_box_open{
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease 0s;
+}
+
+.menu_pop{
+    overflow: scroll;
+    height: 100%;
+    width: 75%;
+    float: right;
+    background-color: black;
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out;
+}
+
+.menu_pop_open{
+    transform: translateX(0) !important;
+    transition: 0.5s ease-in-out;
+}
+
+.menu_pop p, .menu_pop span{
+    color: white;
+    text-align: center;
+}
+
+.menu_close{
+    float: right;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80px;
+}
+
+.menu_box{
+    margin-top: 10vh;
+    padding: 4% 8%;
+}
+
+.menu_box p{
+    padding: 0.5vh;
+}
+
+.menu_opt{
+    font-size: min(7vmin, 48px);
+    font-weight: 300;
+    margin-top: 2vh;
+}
+
+.menu_sub_opt{
+    font-size: min(3vmin, 18px);
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-top: 1vh;
+}
+
+
+
+/* .menu{
     margin: 30px 0;
 }
 
@@ -87,7 +205,7 @@ header p{
     font-weight: 400;
     font-size: 50%;
     word-spacing: 4px;
-}
+} */
 
 
 
