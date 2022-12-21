@@ -91,12 +91,12 @@
 }
 
 .menu_pop{
-    overflow: scroll;
+    overflow: auto;
     height: 100%;
     width: 75%;
     float: right;
     background-color: black;
-    transform: translateX(100%);
+    transform: translateX(101%);
     transition: 0.5s ease-in-out;
 }
 
