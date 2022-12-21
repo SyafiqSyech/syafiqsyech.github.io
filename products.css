@@ -2,25 +2,46 @@
     padding: 150px 0;
 }
 
-.back{
-    padding: 3px 8px 3px 0;
-    z-index: 7;
-    top: 10px;
+.button_box{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
     position: fixed;
+    top: 10px;
+    z-index: 7;
+    justify-content: space-between;
+}
+
+.button{
     display: flex;
     background-color: black;
 }
 
-.back p{
+.button p{
     letter-spacing: 2px;
     padding-top: 7.5px;
     font-weight: 400;
     color: white;
 }
 
-.back span{
+.button span{
     color: white;
+}
+
+.back span{
     transform: scaleX(-1);
+}
+
+.back p{
+    margin-right: 10px;
+}
+
+.menu p{
+    margin-left: 10px;
+}
+
+.menu{
+    cursor: pointer;
 }
 
 #logo{
@@ -37,6 +58,64 @@
     margin: auto;
     font-size: min(15vmin, 64px);
     font-weight: 300;
+}
+
+
+
+.display_none{
+    display: none;
+}
+
+.menu_pop{
+    background-color: black;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    display: none;
+    overflow: auto;
+}
+
+.menu_pop_open{
+    display: block !important;
+}
+
+.menu_pop p, .menu_pop span{
+    color: white;
+}
+
+.menu_close{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.menu_box{
+    margin-top: 50px;
+    padding: 4% 8%;
+}
+
+.menu_box p{
+    padding: 0.5vh;
+}
+
+.menu_opt{
+    font-size: min(10vmin, 48px);
+    font-weight: 300;
+    margin-top: 2vh;
+}
+
+.menu_sub_opt{
+    font-size: min(4vmin, 18px);
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-top: 1vh;
 }
 
 
@@ -86,6 +165,7 @@ main{
     position: relative;
     overflow: hidden;
     border-radius: 45%;
+    cursor: pointer;
 }
 
 .tapme{
@@ -117,9 +197,9 @@ main{
 .desc_box span{
     background-color: white;
     font-family: "Libre Baskerville", sans-serif;
+    font-style: italic;
     letter-spacing: 0;
     font-weight: 400;
-    font-style: italic;
     text-align: start;
     color: black;
 }

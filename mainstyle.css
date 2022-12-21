@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: "Josefin Sans", sans-serif;
-    box-sizing: border-box;
+    box-sizing: content-box;
     color: black;
 }
 
@@ -16,8 +16,7 @@ body{
     background-color: rgb(197, 239, 207);
 }
 
-
-header, main{
+header, main, footer{
     background-color: white;
     display: flex;
     justify-content: center;
@@ -30,7 +29,14 @@ header, main{
     width: 100%;
 }
 
-.main_box{
+.main_box, .footer_box{
     margin: 0 4%;
     width: 100%;
 }
+
+
+
+footer{
+    background-color: black;
+}
+

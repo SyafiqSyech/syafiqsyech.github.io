@@ -88,3 +88,15 @@ header p{
     font-size: 50%;
     word-spacing: 4px;
 }
+
+
+
+.location, .about {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.location h1, .about h1{
+    font-size: 24px;
+    font-weight: 500;
+}
