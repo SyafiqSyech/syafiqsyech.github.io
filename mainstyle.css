@@ -20,6 +20,11 @@ body{
     background-color: rgb(197, 239, 207);
 }
 
+.stop_scroll{
+    overflow: hidden;
+}
+
+
 header, main, footer{
     background-color: white;
     display: flex;
@@ -44,3 +49,88 @@ footer{
     background-color: black;
 }
 
+
+
+.menu_pop_box{
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    height: 100vh;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    z-index: -1;
+    transition: 0.3s ease 0.5s;
+}
+
+.menu_pop_box_open{
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease 0s;
+}
+
+.menu_pop{
+    overflow: auto;
+    height: 100%;
+    width: 75%;
+    float: right;
+    background-color: black;
+    transform: translateX(101%);
+    transition: 0.5s ease-in-out;
+}
+
+.menu_pop_open{
+    transform: translateX(0) !important;
+    transition: 0.5s ease-in-out;
+}
+
+.menu_pop p, .menu_pop span{
+    color: white;
+}
+
+.menu_close{
+    float: right;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80px;
+    text-align: center;
+}
+
+.menu_pop_side{
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    transition: 0s;
+}
+
+.menu_pop_side_open{
+    display: block;
+    transition: 0s;
+}
+
+.menu_box{
+    margin-top: 10vh;
+    padding: 4% 8%;
+}
+
+.menu_box p{
+    padding: 0.5vh;
+    text-align: center;
+}
+
+.menu_opt{
+    font-size: min(7vmin, 48px);
+    font-weight: 300;
+    margin-top: 2vh;
+}
+
+.menu_sub_opt{
+    font-size: min(3vmin, 18px);
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-top: 1vh;
+}

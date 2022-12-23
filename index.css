@@ -1,12 +1,8 @@
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .header_box{
+    display: grid;
+    align-content: center;
     width: unset;
-    margin: 100px auto 20px auto;
+    height: 100vh;
 }
 
 .header_box p{
@@ -18,7 +14,6 @@ header{
     word-spacing: 18px;
     letter-spacing: 0;
 }
-
 
 
 
@@ -78,134 +73,82 @@ header{
     border-radius: 100px;
 }
 
+.scroll_down{
+    position: absolute;
+    bottom: -5px;
+    opacity: 1;
+    transition: 0.5s;
+    display: grid;
+    align-items: center;
+}
 
+.scroll_down p{
+    font-size: 10px;
+    font-family: "Libre Baskerville", sans-serif;
+    font-style: italic;
+    transform: translateY(10px);
+}
 
-.stop_scroll{
-    overflow: hidden;
+.arrow_down{
+    transform: rotate(90deg) scaleY(2);
+    font-size: 50px !important;
+}
+
+.faded{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.5s;
 }
 
 
 
-.menu_pop_box{
-    position: fixed;
-    top: 0;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 700px;
-    height: 100vh;
-    overflow: hidden;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: transparent;
-    z-index: -1;
-    transition: 0.3s ease 0.5s;
-}
-
-.menu_pop_box_open{
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease 0s;
-}
-
-.menu_pop{
-    overflow: auto;
-    height: 100%;
-    width: 75%;
-    float: right;
-    background-color: black;
-    transform: translateX(101%);
-    transition: 0.5s ease-in-out;
-}
-
-.menu_pop_open{
-    transform: translateX(0) !important;
-    transition: 0.5s ease-in-out;
-}
-
-.menu_pop p, .menu_pop span{
-    color: white;
-    text-align: center;
-}
-
-.menu_close{
-    float: right;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 80px;
-}
-
-.menu_box{
-    margin-top: 10vh;
-    padding: 4% 8%;
-}
-
-.menu_box p{
-    padding: 0.5vh;
-}
-
-.menu_opt{
-    font-size: min(7vmin, 48px);
-    font-weight: 300;
-    margin-top: 2vh;
-}
-
-.menu_sub_opt{
-    font-size: min(3vmin, 18px);
-    font-weight: 500;
-    letter-spacing: 3px;
-    margin-top: 1vh;
-}
-
-
-
-/* .menu{
+.big_menu{
     margin: 30px 0;
 }
 
-.menu h1{
+.big_menu h1{
     background-color: black;
     color: white;
     text-align: center;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 16px;
+    letter-spacing: 3px;
     padding: 10px 0;
 }
 
-.menu_box{
-    padding: 5px 10% 10px 10%;
-    margin: 0 10px;
+.big_menu_box{
+    padding: 5px 7% 35px 7%;
     border: 2px solid black;
     border-top: 0;
-    border-radius: 0 0 40px 40px;
 }
 
-.menu_opt{
+.big_menu_opt{
     display: flex;
     border-bottom: 2px solid black;
-    margin: 30px 0;
-    padding-bottom: 8px;
+    margin-top: 30px;
+    padding-bottom: 4px;
 }
 
-.menu_opt span, h2{
-    font-size: 20px;
+.big_menu_opt span, h2{
+    font-size: 24px;
 }
 
-.menu_opt span{
+.big_menu_opt span{
     margin-bottom: 2px;
 }
 
-.menu_opt h2{
+.big_menu_opt h2{
     margin-top: auto;
     letter-spacing: 3px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
-.menu_opt p{
-    margin: auto 5px;
-    font-weight: 400;
-    font-size: 50%;
-    word-spacing: 4px;
-} */
+.big_menu_sub_opt{
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 2px;
+    margin-top: 12px;
+}
 
 
 
