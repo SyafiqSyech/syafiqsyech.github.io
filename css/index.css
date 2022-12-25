@@ -54,6 +54,10 @@
 
 
 
+.logo_box{
+    padding-bottom: 50px;
+}
+
 #logo{
     width: 300px;
 }
@@ -86,11 +90,11 @@
     font-size: 10px;
     font-family: "Libre Baskerville", sans-serif;
     font-style: italic;
-    transform: translateY(10px);
+    transform: translateY(15px);
 }
 
 .arrow_down{
-    transform: rotate(90deg) scaleY(2);
+    transform: rotate(90deg) scaleY(2) scaleX(.75);
     font-size: 50px !important;
 }
 
@@ -139,7 +143,6 @@
 
 .big_menu_opt h2{
     margin-top: auto;
-    letter-spacing: 3px;
     font-weight: 400;
 }
 

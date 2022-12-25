@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BILS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mainstyle.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="../js/main.js"></script>
+    <script src="../js/products.js"></script>
+</head>
+<body>
+    <div id="menupopupbox" class="menu_pop_box">
+        <div id="menupopupside" class="menu_pop_side" onclick="MenuClick()"></div>
+        <div id="menupopup" class="menu_pop">
+            <div class="menu_close" onclick="MenuClick()">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+            <div id="menubox" class="menu_box">
+
+            </div>
+        </div>
+    </div>
+    <header>
+        <div id="dtop" class="header_box">
+            <div class="button_box">
+                <a href="index.html"><div class="button back">
+                    <span class="material-symbols-outlined">arrow_right</span>
+                    <p>BACK</p>
+                </div></a>
+                <div class="button menu" onclick="MenuClick()">
+                    <p>MENU</p>
+                    <span class="material-symbols-outlined">arrow_right</span>
+                </div>
+            </div>
+            <img id="logo" src="../img/Bil's-Coffee-Logo2.png" alt="logo">
+            <p class="page_title">D R I N K S</p>
+        </div>
+    </header>
+    <main>
+        <div id="mainbox" class="main_box">
+        </div>
+    </main>
+    <script>
+        {
+            make_prod(drinks, "d");
+            make_menu("d");
+        }
+    </script>
+</body>
+</html>
