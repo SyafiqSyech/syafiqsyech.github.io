@@ -29,7 +29,7 @@ const drinks = [
 		["img/drinks/Ice Mangorens.jpg", "SWEET MANGORENS", "18", "Mango juice with sweet orange"],
 		["img/drinks/Berrygo Lemonade.jpg", "BERRYGO LEMONADE", "18", "Cranberry and mango with lemonade"],
 		["img/drinks/Pinky Winky.jpg", "PINKY WINKY", "18", "Strawberry juice and strawberry sauce with yakult"],
-		["img/drinks/Ice Hibiscus tea.jpg", "HIBISCUS BERRY LEMONADE", "23", "Hibiscus and mixedberries tea with lemonade"],
+		["img/drinks/Ice Hibiscus Tea.jpg", "HIBISCUS BERRY LEMONADE", "23", "Hibiscus and mixedberries tea with lemonade"],
 		["img/drinks/Ice Tea Idk.jpg", "BLACKCURRENT LEMONADE", "23", "Blackcurrant tea with lemonade"],
 	]],
 	[["BIL'S SIGNATURE"], [null], [null], [
