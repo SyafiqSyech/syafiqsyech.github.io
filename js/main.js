@@ -6,7 +6,7 @@ function MenuClick(){
 }
 
 const drinks = [
-	[["COFFEE"], [null], ["*Extra shot 5k<br>*Oat milk 10k "], [
+	[["COFFEE"], ["HOT / COLD"], ["*Extra shot 5k<br>*Oat milk 10k "], [
 		["img/drinks/Empty.jpg", "ESPRESSO", "22", null],
 		["img/drinks/Ice Bils Original.jpg", "CAPPUCCINO", "30/36", null],
 		["img/drinks/Ice Latte.jpg", "LATTE", "30/32", null],
@@ -15,7 +15,7 @@ const drinks = [
 		["img/drinks/Ice Americano.jpg", "LONG BLACK", "28/30", null],
 		["img/drinks/Hot Mocha.jpg", "MOCHA", "33/36", null],
 	]],
-	[["NON COFFEE"], [null], [null], [
+	[["NON COFFEE"], ["HOT / COLD"], [null], [
 		["img/drinks/Hot Choco.jpg", "CHOCOLATE", "30/33", null],
 		["img/drinks/Hot green tea latte.jpg", "MATCHA LATTE", "30/33", null],
 		["img/drinks/Hot Hibiscus tea.jpg", "TEA", "18/20", "Camomile & Lemongrass / Jasmine / Earl Grey / English Breakfast / Blackcurrent / Mixed Berries & Hibiscus"],
@@ -59,16 +59,18 @@ const food = [
 ];
 
 const bigbottle = [
-	[[null], [null], [null], [
-		["img/placeholder.jpg", "PRODUCT", "11", null],
-		["img/placeholder.jpg", "PRODUCT", "11", "test"],
-		["img/placeholder.jpg", "PRODUCT", "11", "test"],
-		["img/placeholder.jpg", "PRODUCT", "11", null],
-		["img/placeholder.jpg", "PRODUCT", "11", "test"],
+	[["0.5Lt / 1Lt"], [null], [null], [
+		["img/bigbottle/Big BIL'S Original.jpg", "ICED BIL'S ORIGINAL", "35", null],
+		["img/bigbottle/Big Long Black.jpg", "ICED LONG BLACK", "40/65", null],
+		["img/bigbottle/Big Matcha Latte.jpg", "MATCHA LATTE", "50/80", null],
+		["img/bigbottle/Big Chocolate.jpg", "ICED CHOCOLATE", "50/80", null],
+		["img/bigbottle/Big Sweet Mangorens.jpg", "SWEET MANGORENS", "30/50", null],
+		["img/bigbottle/Big Berrygo Lemonade.jpg", "BERRYGO LEMONADE", "30/50", null],
+		["img/bigbottle/Big Strawberry Freeze.jpg", "STRAWBERRY FREEZE", "30/50", null],
 	]]
 ];
 
-const menu = [[drinks, "drinks"], [food, "food"], [bigbottle, "bigbottle"]];
+const menu = [[food, "food"], [drinks, "drinks"], [bigbottle, "bigbottle"]];
 
 function make_menu(char){
     menu.forEach((menu_cat) => {
@@ -89,11 +91,10 @@ function make_menu(char){
 
         link.appendChild(para);
         menu_box.appendChild(link);
-    
-        if(category[0][0] != null){
+
+        if(category[0][0] != null && name[0] !== "b"){
             category.forEach((ctgy) => {
                 prod_count++;
-                
                 const sublink = document.createElement("a");
                 const subpara = make_para("menu_sub_opt", ctgy[0])
                 sublink.href = (name+".html#"+name[0]+prod_count)
@@ -125,8 +126,8 @@ function make_para(a, b){
     return element;
 }
 
-
-
 function make_name(name){
     return [...(name.toUpperCase())].join(" ");
 }
+
+const background = ["rgb(197, 239, 207)", "rgb(197, 208, 239)", "rgb(239, 228, 197)", "rgb(239, 197, 197)", "rgb(239, 197, 212)"]

@@ -16,9 +16,9 @@ a{
     text-decoration: none;
 }
 
-body{
+/* body{
     background-color: rgb(197, 239, 207);
-}
+} */
 
 .stop_scroll{
     overflow: hidden;

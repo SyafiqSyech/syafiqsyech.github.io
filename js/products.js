@@ -11,19 +11,17 @@ function make_prod(category, opt){
         title_box_count++;
         const outer_box = make_div("outer_box", null);
 
-        if(opt != null){
-            const title_box = make_div("title_box", opt+title_box_count);
-            
-            title_box.appendChild(make_para("title", ctgy[0]));
-            if(ctgy[1] != null){
-                title_box.appendChild(make_para("hotcold", ctgy[1]));
-            }
-            if(ctgy[2] != null){
-                title_box.appendChild(make_para("title_desc", ctgy[2]));
-            }
-            
-            outer_box.appendChild(title_box);
+        const title_box = make_div("title_box", opt+title_box_count);
+        
+        title_box.appendChild(make_para("title", ctgy[0]));
+        if(ctgy[1] != null){
+            title_box.appendChild(make_para("hotcold", ctgy[1]));
         }
+        if(ctgy[2] != null){
+            title_box.appendChild(make_para("title_desc", ctgy[2]));
+        }
+        
+        outer_box.appendChild(title_box);
         
         const products = make_div("products", null);
         ctgy[3].forEach((prod) => {
@@ -32,7 +30,7 @@ function make_prod(category, opt){
             const img_box = make_div("img_box", null);
 
             const img = document.createElement("img");
-            img.src = ("../"+prod[0]);
+            img.src = (prod[0]);
             img.alt = "product_img";
             img.className = "product_img";
             
