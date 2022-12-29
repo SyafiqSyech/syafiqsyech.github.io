@@ -50,8 +50,6 @@
     margin: 10px auto;
     width: 40px;
     height: 20px;
-    object-fit: cover;
-    object-position: 100% 0;
 }
 
 .page_title{
