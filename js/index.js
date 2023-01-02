@@ -1,14 +1,3 @@
-window.addEventListener("scroll", () => {
-    if(window.scrollY <= 50) {
-        document.getElementById("arrowdown").classList.remove("faded")
-    }
-    else{
-        document.getElementById("arrowdown").classList.add("faded")
-    }
-});
-
-
-
 function make_big_menu(){
     menu.forEach((menu_cat) => {
         const category = menu_cat[0];
@@ -32,7 +21,7 @@ function make_big_menu(){
         link.appendChild(div);
         big_menu_box.appendChild(link);
     
-        if(category[0][0] != null){
+        if(category[0][0] != null && name[0] !== "b"){
             category.forEach((ctgy) => {
                 prod_count++;
                 

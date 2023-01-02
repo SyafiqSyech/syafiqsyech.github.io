@@ -42,19 +42,79 @@ const drinks = [
 ];
 
 const food = [
-	[["TITLE"], [null], [null], [
-		["img/placeholder.jpg", "PRODUCT", "11", null],
-		["img/placeholder.jpg", "PRODUCT", "11", "test"],
-		["img/placeholder.jpg", "PRODUCT", "11", "test"],
-		["img/placeholder.jpg", "PRODUCT", "11", null],
-		["img/placeholder.jpg", "PRODUCT", "11", "test"],
+	[["PASTRIES"], [null], ["*ask our barista for other options"], [
+		["img/food/placeholder.jpg", "PLAIN CROISSANT", "23", null],
+		["img/food/placeholder.jpg", "ALMOND CROISSANT", "32", null],
+		["img/food/placeholder.jpg", "ALMOND CHOCO CROISSANT", "35", null],
+		["img/food/placeholder.jpg", "CHOCO CROISSANT", "25", null],
+		["img/food/placeholder.jpg", "CHEESE CROISSANT", "35", null],
+		["img/food/placeholder.jpg", "SMOKOED CHICKEN CROISSANT", "38", null],
+		["img/food/placeholder.jpg", "MOLEN", "12", null],
+		["img/food/placeholder.jpg", "BANANA BREAD<br>( CHOCOLATE / CHEESE )", "23", null],
 	]],
-	[["TITLE"], [null], [null], [
-		["img/placeholder.jpg", "PRODUCT", "11", null],
-		["img/placeholder.jpg", "PRODUCT", "11", "test"],
-		["img/placeholder.jpg", "PRODUCT", "11", "test"],
-		["img/placeholder.jpg", "PRODUCT", "11", null],
-		["img/placeholder.jpg", "PRODUCT", "11", "test"],
+	[["STARTERS"], ["( KEMANG )"], [null], [
+		["img/food/placeholder.jpg", "CHICKEN STRIPS", "40", "Boneless Marinated Fried Chicken Thigh"],
+		["img/food/placeholder.jpg", "FRIES", "25", "Fresh Cut Potato, Special Sauce"],
+		["img/food/placeholder.jpg", "POTATO WEDGES", "25", "Fried Potato Crisp on the Outside, Soft on the Inside "],
+		["img/food/placeholder.jpg", "FISH SKIN", "40", "Fried Fish Skin Coated in Salted Egg Sauce (Singapore Style)"],
+		["img/food/placeholder.jpg", "TAHU ISI", "35", "Fried Tofu, Chicken, Vegetables (Spicy Peanut Sauce on the Side)"],
+		["img/food/placeholder.jpg", "NASHVILLE CHICKEN WINGS", "48", "4 Fried Hot Wings"],
+		["img/food/placeholder.jpg", "MIXED PLATTER", "55", "3 Chicken Strips, 2 Tahu Isi, Potato Wedges"],
+		["img/food/placeholder.jpg", "MANGO SALAD", "45", "Iceberg Lettuce, Sliced Chicken, Carrot, Mango Sliced, Sweet & Sour Thai Dressing "],
+		["img/food/placeholder.jpg", "CHICKEN CEASER SALAD", "52", "Romaine Lettuce, Grilled Chicken, Boiled Egg, Caesar Dressing, Parmesan Cheese, Croutons "],
+	]],
+	[["BRUNCH"], ["( KEMANG )"], ["*Available up to 11.30AM"], [
+		["img/food/placeholder.jpg", "GRANOLA YOGHURT WITH BERRIES", "52", "Homemade Granola, Yogurt, Strawberry, Raspberry"],
+		["img/food/placeholder.jpg", "FRENCH TOAST WITH BERRIES", "55", "Brioche Toast, Honey, Mixed Berries"],
+		["img/food/placeholder.jpg", "AVOCADO ON TOAST<br>( ON WEEKENDS )", "55", "Sourdough, Soft Boiled Egg, Avocado Slice, Lemon Zest"],
+		["img/food/placeholder.jpg", "EGGS BENEDICT", "65", "Croissant, Poached Egg, Beef Bacon, Hollandaise Sauce"],
+		["img/food/placeholder.jpg", "TURKISH EGG", "58", "Sourdough, Poached Egg, Herb Yoghurt, Chilli Oil"],
+		["img/food/placeholder.jpg", "SCRAMBLED EGGS", "58", "Sourdough, Creamy Egg, Sauted Mushroom, Chives"],
+		["img/food/placeholder.jpg", "SHAKSUKA", "62", "Sourdough, Sunny Side Up, Beef Crumbles, Feta Cheese, Tomato Sauce"],
+	]],
+	[["TOASTIES"], ["( KEMANG )"], [null], [
+		["img/food/placeholder.jpg", "CHEESE", "26", null],
+		["img/food/placeholder.jpg", "CHEESE & MUSHROOM", "28", null],
+		["img/food/placeholder.jpg", "BACON & CHEESE", "35", null],
+		["img/food/placeholder.jpg", "BEEF BOLOGNESE", "30", null],
+		["img/food/placeholder.jpg", "TUNA", "28", null],
+	]],
+	[["ASIAN"], ["( KEMANG )"], ["*Available from 11.30AM"], [
+		["img/food/placeholder.jpg", "BIL'S BUTTER CHICKEN", "40", "Steamed Rice, Marinated Fried Chicken, Egg and Butter Floss, Curry Leaves, Garlic Sambal"],
+		["img/food/placeholder.jpg", "NASI GORENG BIL'S<br>(*ALL DAY)", "38", "Fried Rice, Chicken, Indonesian Pickle, Garlic Sambal, Garlic Crackers, Egg (Sunny Side Up/ Omelette / Scrambled)"],
+		["img/food/placeholder.jpg", "MIE GORENG BIL'S<br>(*ALL DAY)", "38", "Fried Noodle, Chicken, Meatball, Vegetables, Garlic Sambal Chilli Oil, Indonesian Pickle, Garlic Sambal, Garlic Crackers"],
+		["img/food/placeholder.jpg", "SZECHUAN CHICKEN", "45", "Steamed Rice, Marinated Chicken, Special Sauce, Chilli Flakes"],
+		["img/food/placeholder.jpg", "CHICKEN KATSU", "45", "Steamed Rice, Boneless Fried Chicken, Tonkatsu Sauce "],
+		["img/food/placeholder.jpg", "NASI BALI BY DAPUWR", "48", "Steamed Rice, Fried Chicken, Mixed Vegetables, Minced Chicken Satay, Balinese Sambal"],
+		["img/food/placeholder.jpg", "NASI JERUK BY DAPUWR", "48", "Fragrant Rice, Fried Chicken, Chilli Potatoes, Garlic Sambal "],
+	]],
+	[["WESTERN"], ["( KEMANG )"], ["*Available from 11.30AM"], [
+		["img/food/placeholder.jpg", "SMASHED CHEESEBURGER", "65", "Brioche Bun, 80/20 Patty, Caramelised Onion, Gherkin, Fries"],
+		["img/food/placeholder.jpg", "BUTTERMILK CHICKEN BURGER", "63", "Brioche Bun, Marinated Chicken Thigh, Mayo and Herb Sauce, Fries"],
+		["img/food/placeholder.jpg", "SPAGHETTI MEATBALL", "55", "Spaghetti, Beef Meatball, Bolognese Sauce"],
+		["img/food/placeholder.jpg", "AGLIO OLIO TUNA", "55", "Spaghetti, Tuna Chunk, Basil, Chilli Flakes and Italian Herbs"],
+		["img/food/placeholder.jpg", "BIL'S FRIED CHICKEN", "55", "Buttermilk Marinated Quarter Chicken, Potato Wedges, Side Salad"],
+	]],
+	[["BIL'S x FITDELI"], ["( KEMANG )"], [null], [
+		["img/food/placeholder.jpg", "CHICKEN PESTO SANDWICH", "30/55", null],
+		["img/food/placeholder.jpg", "CHICKEN CAESAR SANDWICH", "32/58", null],
+		["img/food/placeholder.jpg", "TUNA SALAD SANDWICH", "32/58", null],
+		["img/food/placeholder.jpg", "BEEF SALSA SANDWICH", "36/64", null],
+		["img/food/placeholder.jpg", "PHILLY CHEESE SANDWICH", "34/64", null],
+		["img/food/placeholder.jpg", "ROAST BEEF SANDWICH", "38/68", null],
+		["img/food/placeholder.jpg", "CHIMICHURRI CHICKEN SANDWICH", "34/62", null],
+		["img/food/placeholder.jpg", "ROTI NOUGAT KACANG", "20", null],
+		["img/food/placeholder.jpg", "ROTI NOUGAT COKLAT", "20", null],
+		["img/food/placeholder.jpg", "ROTI NOUGAT KEJU", "20", null],
+	]],
+	[["BIL'S x NALU BOWLS"], ["( KEMANG )<br>REG / SMALL"], [null],[
+		["img/food/placeholder.jpg", "MAVERICKS", "95/48", "Our Secret Acai Blend topped with Granola, Sliced of Banana, Strawberry, Coconut flake and Honey will quickly be your newest health addiction."],
+		["img/food/placeholder.jpg", "ULUWATU", "80/40", "Dragon Fruit, Banana, Pepaya, Raspberries, Apple juice & Topped with Granola, Slice of Banana, Strawberry, Mango, Coconut flake & Honey."],
+		["img/food/placeholder.jpg", "J-BAY", "75/38", "Peanut butter, Banana and Soy Milk... Topped with Granola, Slice of Banana & honey (The J-Bay is Protein packed, Get a Protein Boost out of this Smooth tasty treat). "],
+		["img/food/placeholder.jpg", "MACARONIS", "70/35", "Pepaya, Mango, Dragon fruit, Pineapple, Strawberry, Apple juice (Refreshing The Macaronis bowl is tart and icy like your favorite sorbet) Topped with Granola, Slice of Banana, Strawberry & Coconut flake."],
+		["img/food/placeholder.jpg", "TEAHUPO'O", "75/38", "Spinach Ginger, Bananas, Fresh Orange, Pineapple, Mango, Apple juice."],
+		["img/food/placeholder.jpg", "PIPELINE", "70/35", "Banana, Pineapple, Mango, Fresh Coconut meat, Coconut Water and Coconut Milk...<br>Feel like you are in Hawaiian Paradise With our Creamy pina Colada bowls...<br>Topped with Granola, Slice of Banana, Strawberry and Coconut Flake."],
+		["img/food/placeholder.jpg", "WAIMEA", "75/38", "Pear, Dates, Coconut meat, Banana Topped with Homemade Granola & Slice of Banana<br>Feels like healthy coconut ice cream, a must try!"],
 	]]
 ];
 
@@ -70,7 +130,7 @@ const bigbottle = [
 	]]
 ];
 
-const menu = [[food, "food"], [drinks, "drinks"], [bigbottle, "bigbottle"]];
+const menu = [[drinks, "drinks"], [food, "food"], [bigbottle, "bigbottle"]];
 
 function make_menu(char){
     menu.forEach((menu_cat) => {

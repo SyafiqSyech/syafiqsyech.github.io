@@ -16,10 +16,6 @@ a{
     text-decoration: none;
 }
 
-/* body{
-    background-color: rgb(197, 239, 207);
-} */
-
 .stop_scroll{
     overflow: hidden;
 }
@@ -113,7 +109,7 @@ footer{
 }
 
 .menu_box{
-    margin-top: 10vh;
+    margin-top: max(20px, 1vh);
     padding: 4% 8%;
 }
 

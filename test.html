@@ -4,12 +4,12 @@
     <title>BILS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mainstyle.css">
-    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <script src="main.js"></script>
-    <script src="products.js"></script>
-    <script src="test.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/test.js"></script>
 </head>
 <body>
     <div id="menupopupbox" class="menu_pop_box">
@@ -41,6 +41,159 @@
     </header>
     <main>
         <div id="mainbox" class="main_box">
+            <div class="outer_box">
+                <div class="title_box" id="f7">
+                    <p class="title">BIL'S x FITDELI</p>
+                    <p class="hotcold">( KEMANG )</p>
+                    <p class="title_desc"></p>
+                </div>
+            </div>
+            <div class="outer_box">
+                <div class="title_box" id="f7">
+                    <p class="title">SANDWICH</p>
+                    <p class="hotcold">HALF / REG</p>
+                    <p class="title_desc"></p>
+                </div>
+                <div class="products">
+                    <div class="product_box">
+                        <div class="img_box">
+                            <img src="img/food/placeholder.jpg" alt="product_img" class="product_img">
+                        </div>
+                        <p class="product_txt">CHICKEN PESTO SANDWICH<br>30/55</p>
+                    </div>
+                    <div class="product_box">
+                        <div class="img_box">
+                            <img src="img/food/placeholder.jpg" alt="product_img" class="product_img">
+                        </div>
+                        <p class="product_txt">CHICKEN CAESAR SANDWICH<br>32/58</p>
+                    </div>
+                    <div class="product_box">
+                        <div class="img_box">
+                            <img src="img/food/placeholder.jpg" alt="product_img" class="product_img">
+                        </div>
+                        <p class="product_txt">TUNA SALAD SANDWICH<br>32/58</p>
+                    </div>
+                    <div class="product_box">
+                        <div class="img_box">
+                            <img src="img/food/placeholder.jpg" alt="product_img" class="product_img">
+                        </div>
+                        <p class="product_txt">BEEF SALSA SANDWICH<br>36/64</p>
+                    </div>
+                    <div class="product_box">
+                        <div class="img_box">
+                            <img src="img/food/placeholder.jpg" alt="product_img" class="product_img">
+                        </div>
+                        <p class="product_txt">PHILLY CHEESE SANDWICH<br>34/64</p>
+                    </div>
+                    <div class="product_box">
+                        <div class="img_box">
+                            <img src="img/food/placeholder.jpg" alt="product_img" class="product_img">
+                        </div>
+                        <p class="product_txt">ROAST BEEF SANDWICH<br>38/68</p>
+                    </div>
+                    <div class="product_box">
+                        <div class="img_box">
+                            <img src="img/food/placeholder.jpg" alt="product_img" class="product_img">
+                        </div>
+                        <p class="product_txt">CHIMICHURRI CHICKEN SANDWICH<br>34/62</p>
+                    </div>
+                    <div class="product_box">
+                        <div class="img_box">
+                            <img src="img/food/placeholder.jpg" alt="product_img" class="product_img">
+                        </div>
+                        <p class="product_txt">ROTI NOUGAT KACANG<br>20</p>
+                    </div>
+                    <div class="product_box">
+                        <div class="img_box">
+                            <img src="img/food/placeholder.jpg" alt="product_img" class="product_img">
+                        </div>
+                        <p class="product_txt">ROTI NOUGAT COKLAT<br>20</p>
+                    </div>
+                    <div class="product_box">
+                        <div class="img_box">
+                            <img src="img/food/placeholder.jpg" alt="product_img" class="product_img">
+                        </div>
+                        <p class="product_txt">ROTI NOUGAT KEJU<br>20</p>
+                    </div>
+                </div>
+            </div>
+            <div class="outer_box">
+                <div class="title_box" id="f8">
+                    <p class="title">BIL'S x NALU BOWLS</p>
+                    <p class="hotcold">( KEMANG )<br>REG / SMALL</p>
+                    <p class="title_desc"></p>
+                </div>
+                <div class="products">
+                <div class="product_box">
+                    <div class="img_box pointer" onclick="ImgClick(52)">
+                        <p class="tapme">TAP ME</p>
+                        <div class="desc_box" id="tx52">
+                            <span>Our Secret Acai Blend topped with Granola, Sliced of Banana, Strawberry, Coconut flake and Honey will quickly be your newest health addiction.</span>
+                        </div>
+                        <img src="img/food/placeholder.jpg" alt="product_img" class="product_img" id="im52">
+                    </div>
+                    <p class="product_txt">MAVERICKS<br>95/48</p>
+                </div>
+                <div class="product_box">
+                    <div class="img_box pointer" onclick="ImgClick(53)">
+                        <p class="tapme">TAP ME</p>
+                        <div class="desc_box" id="tx53">
+                            <span>Dragon Fruit, Banana, Pepaya, Raspberries, Apple juice &amp; Topped with Granola, Slice of Banana, Strawberry, Mango, Coconut flake &amp; Honey.</span>
+                        </div>
+                        <img src="img/food/placeholder.jpg" alt="product_img" class="product_img" id="im53">
+                    </div>
+                    <p class="product_txt">ULUWATU<br>80/40</p>
+                </div>
+                <div class="product_box">
+                    <div class="img_box pointer" onclick="ImgClick(54)">
+                        <p class="tapme">TAP ME</p>
+                        <div class="desc_box" id="tx54">
+                            <span>Peanut butter, Banana and Soy Milk... Topped with Granola, Slice of Banana &amp; honey (The J-Bay is Protein packed, Get a Protein Boost out of this Smooth tasty treat). </span>
+                        </div>
+                        <img src="img/food/placeholder.jpg" alt="product_img" class="product_img" id="im54">
+                    </div>
+                    <p class="product_txt">J-BAY<br>75/38</p>
+                </div>
+                <div class="product_box">
+                    <div class="img_box pointer" onclick="ImgClick(55)">
+                        <p class="tapme">TAP ME</p>
+                        <div class="desc_box" id="tx55">
+                            <span>Pepaya, Mango, Dragon fruit, Pineapple, Strawberry, Apple juice (Refreshing The Macaronis bowl is tart and icy like your favorite sorbet) Topped with Granola, Slice of Banana, Strawberry &amp; Coconut flake.</span>
+                        </div>
+                        <img src="img/food/placeholder.jpg" alt="product_img" class="product_img" id="im55">
+                    </div>
+                    <p class="product_txt">MACARONIS<br>70/35</p>
+                </div>
+                <div class="product_box">
+                    <div class="img_box pointer" onclick="ImgClick(56)">
+                        <p class="tapme">TAP ME</p>
+                        <div class="desc_box" id="tx56">
+                            <span>Spinach Ginger, Bananas, Fresh Orange, Pineapple, Mango, Apple juice.</span>
+                        </div>
+                        <img src="img/food/placeholder.jpg" alt="product_img" class="product_img" id="im56">
+                    </div>
+                    <p class="product_txt">TEAHUPO'O<br>75/38</p>
+                </div>
+                <div class="product_box">
+                    <div class="img_box pointer" onclick="ImgClick(57)">
+                        <p class="tapme">TAP ME</p>
+                        <div class="desc_box" id="tx57">
+                            <span>Banana, Pineapple, Mango, Fresh Coconut meat, Coconut Water and Coconut Milk...<br>Feel like you are in Hawaiian Paradise With our Creamy pina Colada bowls...<br>Topped with Granola, Slice of Banana, Strawberry and Coconut Flake.</span>
+                        </div>
+                        <img src="img/food/placeholder.jpg" alt="product_img" class="product_img" id="im57">
+                    </div>
+                    <p class="product_txt">PIPELINE<br>70/35</p>
+                </div>
+                <div class="product_box">
+                    <div class="img_box pointer" onclick="ImgClick(58)">
+                        <p class="tapme">TAP ME</p><div class="desc_box" id="tx58">
+                            <span>Pear, Dates, Coconut meat, Banana Topped with Homemade Granola &amp; Slice of Banana<br>Feels like healthy coconut ice cream, a must try!</span>
+                        </div>
+                        <img src="img/food/placeholder.jpg" alt="product_img" class="product_img" id="im58">
+                    </div>
+                    <p class="product_txt">WAIMEA<br>75/38</p>
+                </div>
+            </div>
         </div>
     </main>
     <script>

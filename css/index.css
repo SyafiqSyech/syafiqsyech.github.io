@@ -1,8 +1,8 @@
 .header_box{
+    margin: 50px 0 10px 0;
     display: grid;
     align-content: center;
     width: unset;
-    height: 100vh;
 }
 
 .header_box p{
@@ -55,11 +55,12 @@
 
 
 .logo_box{
-    padding-bottom: 50px;
+    width: 275px;
+    text-align: center;
 }
 
 #logo{
-    width: 300px;
+    width: 100%;
 }
 
 .link_box{
@@ -76,34 +77,6 @@
     height: 41px;
     border-radius: 100px;
 }
-
-.scroll_down{
-    position: absolute;
-    bottom: -5px;
-    opacity: 1;
-    transition: 0.5s;
-    display: grid;
-    align-items: center;
-}
-
-.scroll_down p{
-    font-size: 10px;
-    font-family: "Libre Baskerville", sans-serif;
-    font-style: italic;
-    transform: translateY(15px);
-}
-
-.arrow_down{
-    transform: rotate(90deg) scaleY(2) scaleX(.75);
-    font-size: 50px !important;
-}
-
-.faded{
-    opacity: 0;
-    transform: translateY(10px);
-    transition: 0.5s;
-}
-
 
 
 .big_menu{

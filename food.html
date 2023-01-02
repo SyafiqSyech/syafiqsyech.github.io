@@ -11,7 +11,17 @@
     <script src="js/products.js"></script>
     <style>
         .img_box{
-            aspect-ratio: 4 / 3;
+            aspect-ratio: 4 / 3 !important;
+        }
+
+        .products{
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        }
+
+        @media (max-width: 440px){
+            .products{
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            }
         }
     </style>
 </head>
