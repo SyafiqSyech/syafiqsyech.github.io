@@ -51,7 +51,7 @@ const food = [
 		["img/food/pastries/Smoked Chicken Croissant.jpg", "Smoked Chicken Croissant", "38k", null],
 		["img/food/pastries/Molen.jpg", "Molen", "12k", null],
 		["img/food/pastries/Banana Bread.jpg", "Banana Bread<br>( Chocolate / Cheese )", "23k", null],
-		["img/food/pastries/Brokie.jpg", "Brokie", "35k", null],
+		["img/food/pastries/Brookie.jpg", "Brookie", "35k", null],
 		["img/food/pastries/Choco Crumble Pie.jpg", "Choco Crumble Pie", "38k", null],
 	]],
 	[["Starters"], ["( Kemang )"], [null], [
