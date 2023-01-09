@@ -3,7 +3,7 @@
 
 @font-face{
     font-family: "Author Style";
-    src: url("fonts/AuthorStyle.otf") format('opentype');
+    src: local('Author Style') url("fonts/AuthorStyle.otf") format('opentype');
 }
 
 *{
