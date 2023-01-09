@@ -115,11 +115,13 @@
 }
 
 .big_menu_opt h2{
+    text-transform: uppercase;
     margin-top: auto;
     font-weight: 400;
 }
 
 .big_menu_sub_opt{
+    text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 3px;
     padding: 2px;

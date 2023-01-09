@@ -21,7 +21,7 @@ function make_big_menu(){
         link.appendChild(div);
         big_menu_box.appendChild(link);
     
-        if(category[0][0] != null && name[0] !== "b"){
+        if(category[0][0] != null){
             category.forEach((ctgy) => {
                 prod_count++;
                 

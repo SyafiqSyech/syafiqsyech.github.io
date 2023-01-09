@@ -1,0 +1,47 @@
+.img_box1{
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 45%;
+    aspect-ratio: 4 / 3;
+}
+
+.products1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    column-gap: 6%;
+}
+
+@media (max-width: 440px){
+    .products1{
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+}
+
+
+
+.collab{
+    text-align: center;
+}
+
+.add_on_box{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.add_on{
+    margin-bottom: 30px;
+}
+
+.add_on_name{
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'Caveat', cursive;
+}
+
+.add_on_price{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Caveat', cursive;
+}

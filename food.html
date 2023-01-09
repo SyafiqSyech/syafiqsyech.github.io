@@ -6,24 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/mainstyle.css">
     <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/food.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="js/main.js"></script>
     <script src="js/products.js"></script>
-    <style>
-        .img_box{
-            aspect-ratio: 4 / 3 !important;
-        }
-
-        .products{
-            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-        }
-
-        @media (max-width: 440px){
-            .products{
-                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            }
-        }
-    </style>
 </head>
 <body>
     <div id="menupopupbox" class="menu_pop_box">
@@ -50,20 +36,70 @@
                 </div>
             </div>
             <img id="logo" src="img/Bil's-Coffee-Logo2.png" alt="logo">
-            <p class="page_title">F O O D</p>
+            <p class="page_title">Foodies</p>
         </div>
     </header>
     <main>
         <div id="mainbox" class="main_box">
-
+            <script>
+                {
+                    make_prod(food, "f");
+                }
+            </script>
+            <h1 class="collab">Bil 's X Fitdeli</h1>
+            <script>
+                {
+                    make_prod(food1, "f1");
+                }
+            </script>
+            <h1 class="collab">Bil 's X Nalubowls</h1>
+            <script>
+                {
+                    make_prod(food2, "f2");
+                }
+            </script>
+            <div class="outer_box">
+                <div class="title_box" id="f8">
+                    <p class="title">Add Ons</p>
+                </div>
+                <div class="add_on_box">
+                    <div class="add_on">
+                        <p class="add_on_name">Bread</p>
+                        <p class="add_on_price">23k</p>
+                    </div>
+                    <div class="add_on">
+                        <p class="add_on_name">Cured Salmon</p>
+                        <p class="add_on_price">23k</p>
+                    </div>
+                    <div class="add_on">
+                        <p class="add_on_name">Bread</p>
+                        <p class="add_on_price">23k</p>
+                    </div>
+                    <div class="add_on">
+                        <p class="add_on_name">Bread</p>
+                        <p class="add_on_price">23k</p>
+                    </div>
+                    <div class="add_on">
+                        <p class="add_on_name">Bread</p>
+                        <p class="add_on_price">23k</p>
+                    </div>
+                    <div class="add_on">
+                        <p class="add_on_name">Bread</p>
+                        <p class="add_on_price">23k</p>
+                    </div>
+                    <div class="add_on"></div>
+                    <div class="add_on">
+                        <p class="add_on_name">Sautéed Mushroom</p>
+                        <p class="add_on_price">23k</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <script>
+            {
+                make_menu("f");
+            }
+        </script>
     </main>
-    <script>
-        {
-            make_prod(food, "f");
-            make_menu("f");
-            document.body.style.backgroundColor = background[Math.floor(Math.random() * 5)];
-        }
-    </script>
 </body>
 </html>

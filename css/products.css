@@ -53,10 +53,8 @@
 }
 
 .page_title{
-    width: 80%;
-    margin: auto;
-    font-size: min(15vmin, 64px);
-    font-weight: 300;
+    font-size: 150px;
+    font-family: 'Author Style', cursive;
 }
 
 
@@ -69,24 +67,22 @@ main{
     padding-bottom: 80px;
 }
 
-.outer_box p{
-    letter-spacing: 3px;
-}
-
 .title_box{
     width: 100%;
-    align-items: center;
-    text-align: center;
-    font-weight: 600;
+    align-items: left;
     margin-bottom: 30px;
     padding-top: 30px;
 }
 
 .title{
-    font-size: 24px;
+    font-family: 'Author Style', cursive;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 80px;
 }
 
 .title_desc{
+    text-align: left;
     font-family: "Libre Baskerville", sans-serif;
     font-style: italic;
     font-size: 12px;
@@ -96,7 +92,10 @@ main{
 }
 
 .hotcold{
-    font-size: 14px;
+    font-family: 'Caveat', cursive;
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .products{
@@ -165,8 +164,19 @@ main{
 }
 
 .product_txt{
-    font-weight: 500;
     margin-top: 10px;
+}
+
+.product_txt_name{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+}
+
+.product_txt_price{
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Caveat', cursive;
 }
 
 .imgtoggle{
@@ -187,10 +197,7 @@ p{
     text-align: center;
 }
 
-#tx58, #tx57{
-    line-height: 1;
-    width: 100%;
-}
+
 
 @media (max-width: 355px){
     .products{

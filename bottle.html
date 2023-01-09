@@ -11,7 +11,7 @@
     <script src="js/products.js"></script>
     <style>
         .img_box{
-            aspect-ratio: 3 / 4;
+            aspect-ratio: 3 / 4 !important;
         }
 
         .product_img{
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <img id="logo" src="img/Bil's-Coffee-Logo2.png" alt="logo">
-            <p class="page_title">B I G B O T T L E</p>
+            <p class="page_title">Bottle</p>
         </div>
     </header>
     <main>
@@ -54,9 +54,8 @@
     </main>
     <script>
         {
-            make_prod(bigbottle, null);
+            make_prod(bottle, null);
             make_menu("b");
-            document.body.style.backgroundColor = background[Math.floor(Math.random() * 5)];
         }
     </script>
 </body>
