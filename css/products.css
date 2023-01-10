@@ -100,7 +100,7 @@ main{
 
 .products{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     column-gap: 6%;
 }
 
@@ -199,8 +199,7 @@ p{
 
 
 
-@media (max-width: 355px){
+@media (min-width: 520px){
     .products{
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     }
-}
