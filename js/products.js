@@ -1,6 +1,29 @@
 function ImgClick(n){
-    document.getElementById("im"+n).classList.toggle("imgtoggle")
-    document.getElementById("tx"+n).classList.toggle("desctoggle")
+    const desc = document.getElementById("tx"+n);
+    const parent = desc.parentElement;
+
+    if(parent.classList == "img_box pointer img_boxtoggle" || parent.classList == "img_box1 pointer img_boxtoggle"){
+        parent.classList.toggle("img_boxtoggle");
+        document.getElementById("im"+n).classList.toggle("imgtoggle");
+        document.getElementById("tx"+n).classList.toggle("desctoggle");
+        parent.style.height = "auto";
+        return;
+    }
+
+    var maxheight = parent.clientHeight * 75/100;
+    var height = desc.clientHeight;
+    
+    
+    if(height > maxheight){
+        console.log(maxheight)
+        console.log(height)
+        parent.classList.toggle("img_boxtoggle");
+        parent.style.height = (height+50)+"px";
+        console.log(parent.clientHeight)
+    }
+    
+    document.getElementById("im"+n).classList.toggle("imgtoggle");
+    document.getElementById("tx"+n).classList.toggle("desctoggle");
 }
 
 function make_prod(category, opt){
@@ -41,6 +64,7 @@ function make_prod(category, opt){
                 const para = make_para("tapme", "TAP ME");
                 const desc_box = make_div("desc_box", "tx"+prod_count);
                 
+                
                 const span = document.createElement("span");
                 span.innerHTML = prod[3];
                 
@@ -59,16 +83,17 @@ function make_prod(category, opt){
             
             img_box.appendChild(img);
             product_box.appendChild(img_box);
-
+            
             const product_txt = make_div("product_txt", null)
             product_txt.appendChild(make_para("product_txt_name", prod[1]));
             product_txt.appendChild(make_para("product_txt_price", prod[2]));
-
+            
             product_box.appendChild(product_txt);
             products.appendChild(product_box);
         });
-
+        
         outer_box.appendChild(products);
         main_box.appendChild(outer_box);
+
     });
 }

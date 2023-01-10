@@ -97,6 +97,15 @@ const food = [
 		["img/food/western/Spaghetti Meatball.jpg", "Spaghetti Meatball", "55k", "Spaghetti, Beef Meatball, Bolognese Sauce"],
 		["img/food/western/Aglio Olio Tuna.jpg", "Aglio Olio Tuna", "55k", "Spaghetti, Tuna Chunk, Basil, Chilli Flakes and Italian Herbs"],
 		["img/food/western/Bil's Fried Chicken.jpg", "Bil's Fried Chicken", "55k", "Buttermilk Marinated Quarter Chicken, Potato Wedges, Side Salad"],
+	]],
+	[["Bil 's x Nalu Bowls"], ["( Kemang )<br>Reg / Small"], [null], [
+		["img/food/placeholder.jpg", "Mavericks", "95k / 48k", "Our Secret Acai Blend topped with Granola, Sliced of Banana, Strawberry, Coconut flake and Honey will quickly be your newest health addiction."],
+		["img/food/placeholder.jpg", "Uluwatu", "80k / 40k", "Dragon Fruit, Banana, Pepaya, Raspberries, Apple juice & Topped with Granola, Slice of Banana, Strawberry, Mango, Coconut flake & Honey."],
+		["img/food/placeholder.jpg", "J-bay", "75k / 38k", "Peanut butter, Banana and Soy Milk... Topped with Granola, Slice of Banana & honey (The J-Bay is Protein packed, Get a Protein Boost out of this Smooth tasty treat). "],
+		["img/food/placeholder.jpg", "Macaronis", "70k / 35k", "Pepaya, Mango, Dragon fruit, Pineapple, Strawberry, Apple juice (Refreshing The Macaronis bowl is tart and icy like your favorite sorbet) Topped with Granola, Slice of Banana, Strawberry & Coconut flake."],
+		["img/food/placeholder.jpg", "Teahupo'o", "75k / 38k", "Spinach Ginger, Bananas, Fresh Orange, Pineapple, Mango, Apple juice."],
+		["img/food/placeholder.jpg", "Pipeline", "70k / 35k", "Banana, Pineapple, Mango, Fresh Coconut meat, Coconut Water and Coconut Milk...<br>Feel like you are in Hawaiian Paradise With our Creamy pina Colada bowls...<br>Topped with Granola, Slice of Banana, Strawberry and Coconut Flake."],
+		["img/food/placeholder.jpg", "Waimea", "75k / 38k", "Pear, Dates, Coconut meat, Banana Topped with Homemade Granola & Slice of Banana<br>Feels like healthy coconut ice cream, a must try!"],
 	]]
 ];
 

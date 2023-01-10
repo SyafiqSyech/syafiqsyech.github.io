@@ -100,7 +100,7 @@ main{
 
 .products{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     column-gap: 6%;
 }
 
@@ -114,6 +114,7 @@ main{
     position: relative;
     overflow: hidden;
     border-radius: 45%;
+    transition: 0.5s ease 0.3s;
 }
 
 .pointer{
@@ -179,6 +180,12 @@ main{
     font-family: 'Caveat', cursive;
 }
 
+.img_boxtoggle{
+    aspect-ratio: auto !important;
+    transition: 0.3s ease;
+    border-radius: 0 !important;
+}
+
 .imgtoggle{
     opacity: 0.5;
     filter: blur(3px);
@@ -199,8 +206,8 @@ p{
 
 
 
-@media (min-width: 520px){
+@media (max-width: 355px){
     .products{
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 }
